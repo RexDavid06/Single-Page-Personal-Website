@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My Personal Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Buchi Rex-David</h1>
+        <p>Backend Developer | Python & Django Enthusiast</p>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#pictures">Pictures</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Hello! I am Buchi Rex-David, a passionate backend developer with expertise in Python and Django. I enjoy building scalable and secure applications, and I am always eager to learn and contribute to exciting projects.</p>
+    </section>
+
+    <section id="portfolio">
+        <h2>Portfolio</h2>
+        <div class="portfolio">
+            <a href="https://rexdavid06.github.io/mysite/" target="_blank">
+                <img src="" alt="Project 1">
+             </a>
+             <p>My site</p>
+
+            <a href="https://github.com/RexDavid06/blog-application" target="_blank">
+                <img src="images/projects/image3.png" alt="Project 2">
+            </a>
+            <p>Blog Application</p>
+
+            <a href="https://github.com/RexDavid06/Todo_App" target="_blank">
+                <img src="" alt="Project 3">
+            </a>
+            <p>TODO Application</p>
+
+            <a href="https://github.com/RexDavid06/chatApi" target="_blank">
+                <img src="images/projects/image2.png" alt="Project 4">
+            </a>
+            <p>Chat API</p>
+        </div>
+    </section>
+
+    <section id="pictures">
+        <h2>Pictures</h2>
+        <div class="pictures">
+            <img src="images/image1.jpg" alt="image1">
+            <img src="images/image2.jpg" alt="image2">
+            <img src="images/image3.jpeg" alt="image3">
+            <img src="images/image4.jpg" alt="image4">
+            <img src="images/image5.jpg" alt="image5">
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>Email: <a href="mailto:rhexmilia06@gmail.com">rhexmilia06@gmail.com</a></p>
+        <p>Phone: 07078774666</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Buchi Rex-David. All Rights Reserved.</p>
+    </footer>
+    <script>
+    
+        document.querySelectorAll('nav ul li a').forEach(function(anchor) {
+            anchor.addEventListener('click', function() {
+                // This just logs the section you're jumping to
+                console.log('Jumping to section: ' + anchor.getAttribute('href'));
+            });
+        });
+    </script>
+    
+</body>
+</html>
